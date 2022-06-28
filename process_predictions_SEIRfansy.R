@@ -57,6 +57,7 @@ data = tmp %>%
   rename(daily_cases = value_case_daily_reported,
          daily_deaths = value_death_daily_reported,
          daily_cases_text = text_case_daily_reported,
-         daily_deaths_text = text_death_daily_reported)
+         daily_deaths_text = text_death_daily_reported) %>%
+  mutate(place = "India")
 
 write_csv(data, "../CovidPredTesting/SEIR_predictions.csv")
