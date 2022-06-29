@@ -40,7 +40,8 @@ function makeDailyPredictionPlot(externalData, plotDiv) {
                 xaxis: 
                     {
                         anchor: 'y2',
-                        tickangle: -45
+                        tickangle: 0,
+                        title: 'Date',
                     },
                 yaxis2: { 
                     title: 'Projected number of daily new deaths',
@@ -51,7 +52,7 @@ function makeDailyPredictionPlot(externalData, plotDiv) {
                 },
                 xaxis2: {
                   anchor: 'y1',
-                  title: 'Date',
+                  //title: 'Date',
                 },
                 yaxis:
                 {
