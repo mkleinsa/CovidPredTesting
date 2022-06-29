@@ -9,10 +9,10 @@ function makeDailyPredictionPlot(externalData, plotDiv) {
                 y: unpack(data, locale, "daily_cases"),
                 name: 'SEIR daily new cases',
                 type: 'bar',
-                xaxis: 'x2',
-        		yaxis: 'y2',
+                xaxis: 'x1',
+        		yaxis: 'y1',
                 marker: {
-                    color: '#FF9933',
+                    color: '#138808',
                 }
             };
 
@@ -21,10 +21,10 @@ function makeDailyPredictionPlot(externalData, plotDiv) {
                 y: unpack(data, locale, "daily_deaths"),
                 name: 'SEIR daily new deaths',
                 type: 'bar',
-                xaxis: 'x1',
-        		yaxis: 'y1',
+                xaxis: 'x2',
+        		yaxis: 'y2',
                 marker: {
-                    color: '#138808',
+                    color: '#FF9933',
                 }
             };
         
@@ -43,7 +43,7 @@ function makeDailyPredictionPlot(externalData, plotDiv) {
                         tickangle: -45
                     },
                 yaxis2: { 
-                    title: 'Projected number of daily deaths',
+                    title: 'Projected number of daily new deaths',
                 },
                 legend: {
                     "orientation": "h",
@@ -57,7 +57,7 @@ function makeDailyPredictionPlot(externalData, plotDiv) {
                 {
                     title: 
                     {
-                        text: 'Daily counts'
+                        text: 'Projected number of daily new cases'
                     }
                 },
                 margin: margin(),
