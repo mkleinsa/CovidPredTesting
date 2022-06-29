@@ -73,7 +73,7 @@ function buildPredictions()
     plots.appendChild(t);
 
     s = document.createElement('p');
-    s.innerHTML = 'This figure provides the projected number of COVID-19 new cases (orange) and deaths (green) in ' + locale + '. You can hover your cursor over the bar to see the exact numerical counts.'
+    s.innerHTML = 'This figure provides the projected number of COVID-19 new cases (green) and deaths (orange) in ' + locale + '. You can hover your cursor over the bar to see the exact numerical counts.'
     plots.appendChild(s);
 
     e = document.createElement('div');
