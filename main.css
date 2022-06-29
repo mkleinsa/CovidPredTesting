@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* || all content ------------------------------------------*/
+body {
+    margin: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+/* || nav bar ------------------------------------------*/
+menu {
+    list-style-type: none;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+menu li {
+    float: left;
+}
+
+menu li a {
+    display: inline-block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+menu li a:hover {
+    color: #333333;
+}
+
+menu li .active {
+    background-color: #E7E7E7;
+}
+
+/* negate hover effects for active tab */
+menu li .active:hover {
+    color: #777777;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    padding: 5px 0px;
+}
+
+.dropdown-content a {
+    display: block;
+    text-align: left;
+    padding: 3px 20px;
+}
+
+.dropdown-content .inactive-state a {
+    color: #333333;
+}
+
+.dropdown-content .inactive-state:hover {
+    color: #333333;
+    display: block;
+    text-align: left;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.dropdown-content .active-state:hover {
+    color: #ffffff;
+    background-color: #337ab7;
+    cursor: pointer;
+}
+
+.dropdown-active{
+    display: block;
+}
+
+.States-active{
+    background-color: #E7E7E7;
+}
+
+.States-active:hover {
+    color: #777777;
+}
+
+.States:hover {
+    cursor: pointer;
+}
+
+.dropdown-active .state-option:hover {
+    cursor: pointer;
+}
+
+.inactive:hover {
+    cursor: pointer;
+}
+
+.active-state {
+    color: #ffffff;
+    background-color: #337ab7;
+}
+
+/* builds down-arrow */
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+@media screen and (max-width: 650px) {
+    menu li {
+        float: none;
+    }
+    menu li a {
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+}
+
+/* || plots ------------------------------------------*/
+.standardPlot {
+    height: 600px;
+    width: 100%;
+}
+
+#plots h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+#plots {
+    margin: 0em 5em;
+}
+
+#plots p {
+    margin: 2px;
+    font-size: 13px;
+}
+
+#plots #countryComp {
+    padding-bottom: 2em;
+}
+
+#plots #nat_predictions {
+    padding-bottom: 2em;
+}
+
+@media screen and (max-width: 650px) {
+    #plots {
+        margin: 0px 1em;
+    }
+}
+
+/* || snapshot and metrics ------------------------------------------*/
+#snapshot, #metrics {
+    border: none; 
+    width: 100%;
+}
+
+#metrics_page {
+    margin: 0em 5em;
+}
+
+@media screen and (max-width: 650px) {
+    #metrics_page {
+        margin: 0px 1em;
+    }
+}
+
+/* || references ------------------------------------------*/
+.references {
+    margin: .5em;
+    max-width: 100%;
+    padding: 19px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+.references p {
+    font-size: 14px;
+}
+
+.references a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.references a:hover, a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+/* || top matter ------------------------------------------*/
+.topmatter {
+    margin: .5em;
+    max-width: 100%;
+    padding: 19px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    font-size: 14px;
+    display: grid;
+    grid-column-gap: 1em;
+}
+
+.topmatter a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.topmatter a:hover, a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.first-text {
+    margin-top: 0px;
+}
+
+.topmatter h4 {
+    margin-top: 0px;
+}
+
+
+.title {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.sidebar-image {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.main {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.main-sub1 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.main-sub2 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+@media only screen and (max-width: 875px) { 
+    .title {
+        grid-column: 1 / span 2;
+    }
+    
+    .sidebar-image {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .main {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .main-sub1 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .main-sub2 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+}
+
+@media only screen and (max-width: 700px) {   
+    .first-text {
+        margin-top: 1em;
+    }
+
+    .title {
+        grid-column: 1;
+    }
+    
+    .sidebar-image {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .main {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .main-sub1 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .main-sub2 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+}

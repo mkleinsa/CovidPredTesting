@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>COVID-19 India</title>
+
+        <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/umich-cphds/cov-ind-19/master/app/www/group_logo.png">
+
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <script src="main.js"></script>
+        <script src="navbar.js"></script>
+
+        <script src="plots/daily_bar.js"></script>
+        <script src="plots/tvr.js"></script>
+        <script src="plots/tpr.js"></script>
+        <script src="plots/daily_vax.js"></script>
+        <script src="plots/perc_vax.js"></script>
+        <script src="plots/country_comp.js"></script>
+        <script src="plots/daily_prediction.js"></script>
+    
+        <script src="plots/unpack.js"></script>
+        <script src="plots/layout.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <menu>
+                <li><a>COVID-19 Outbreak in India</a></li>
+                <li><a id="National">National</a></li>
+                <li class="dropdown"><a class="States" id="States">States <b class="caret"></b></a>
+                    <div class="dropdown-content" id="dropdown-content"></div>    
+                </li>
+                <li><a id="Metrics">Metrics</a></li>
+                <li><a id="References">References</a></li>
+            </menu>
+        </div>
+
+        <div id="content"></div>
+
+    </body>
+</html>
+
+
