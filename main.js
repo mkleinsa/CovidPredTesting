@@ -69,7 +69,7 @@ function buildPredictions()
 
     // predictions
     t = document.createElement('h2');
-    t.innerHTML = 'SEIR daily new cases'
+    t.innerHTML = 'SEIR case and death projections'
     plots.appendChild(t);
 
     s = document.createElement('p');
