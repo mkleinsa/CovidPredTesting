@@ -60,4 +60,8 @@ data = tmp %>%
          daily_deaths_text = text_death_daily_reported) %>%
   mutate(place = "India")
 
+data = data %>%
+  mutate(daily_deaths = round(daily_deaths),
+         daily_cases = round(daily_cases))
+
 write_csv(data, "../CovidPredTesting/SEIR_predictions.csv")
